@@ -1,3 +1,4 @@
+alert("hi");
 function updateTime() {
   // Johannesburg
   let JohannesburgElement = document.querySelector("#Johannesburg");
