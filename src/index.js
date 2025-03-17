@@ -17,28 +17,28 @@ function updateTime() {
     }
   }
 
-  // East Rand
-  let EastRandElement = document.querySelector("#EastRand");
-  if (EastRandElement) {
-    let EastRandDateElement = EastRandElement.querySelector(".date");
-    let EastRandTimeElement = EastRandElement.querySelector(".time");
-    let EastRandTime = moment().tz("Africa/Johannesburg");
+  // Chicago
+  let ChicagoElement = document.querySelector("#Chicago");
+  if (ChicagoElement) {
+    let ChicagoDateElement = ChicagoElement.querySelector(".date");
+    let ChicagoTimeElement = ChicagoElement.querySelector(".time");
+    let ChicagoTime = moment().tz("America/Chicago");
 
-    EastRandDateElement.innerHTML = EastRandTime.format("MMMM	Do YYYY");
-    EastRandTimeElement.innerHTML = EastRandTime.format(
+    ChicagoDateElement.innerHTML = ChicagoTime.format("MMMM	Do YYYY");
+    ChicagoTimeElement.innerHTML = ChicagoTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Pretoria
-  let PretoriaElement = document.querySelector("#Pretoria");
-  if (PretoriaElement) {
-    let PretoriaDateElement = PretoriaElement.querySelector(".date");
-    let PretoriaTimeElement = PretoriaElement.querySelector(".time");
-    let PretoriaTime = moment().tz("Africa/Johannesburg");
+  // Dubai
+  let DubaiElement = document.querySelector("#Dubai");
+  if (DubaiElement) {
+    let DubaiDateElement = DubaiElement.querySelector(".date");
+    let DubaiTimeElement = DubaiElement.querySelector(".time");
+    let DubaiTime = moment().tz("Asia/Dubai");
 
-    PretoriaDateElement.innerHTML = PretoriaTime.format("MMMM	Do YYYY");
-    PretoriaTimeElement.innerHTML = PretoriaTime.format(
+    DubaiDateElement.innerHTML = DubaiTime.format("MMMM	Do YYYY");
+    DubaiTimeElement.innerHTML = DubaiTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
