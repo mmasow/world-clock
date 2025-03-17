@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock - Oratile Monnapula</title>
   </head>
   <body>
@@ -13,29 +15,29 @@
 
       <select>
         <option value="">Select a city..</option>
-        <option value="">Johannesburg</option>
-        <option value="">East Rand</option>
-        <option value="">Pretoria</option>
+        <option value="Johannesburg">Johannesburg</option>
+        <option value="East Rand">East Rand</option>
+        <option value="Pretoria">Pretoria</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="Johannesburg">
         <h2>Johannesburg</h2>
         <div class="date">March 17th 2025</div>
         <div class="time">00:00:00 AM</div>
       </div>
-      <div class="city">
+      <div class="city" id="East Rand">
         <h2>East Rand</h2>
         <div class="date">March 17th 2025</div>
         <div class="time">00:00:00 AM</div>
       </div>
-      <div class="city">
+      <div class="city" id="Pretoria">
         <h2>Pretoria</h2>
         <div class="date">March 17th 2025</div>
         <div class="time">00:00:00 AM</div>
       </div>
     </div>
     <footer>
-      This project was coded with ❤️ by Matt Delac and is
+      This project was coded with ❤️ by Oratile Monnapula and is
       <a href="https://github.com/mmasow/world-clock" target="_blank">
         open sourced on GitHub</a
       >
