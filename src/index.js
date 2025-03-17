@@ -1,18 +1,20 @@
 function updateTime() {
   // Johannesburg
   let JohannesburgElement = document.querySelector("#Johannesburg");
-  if (JohannesburgElementElement) {
+  if (JohannesburgElement) {
     let JohannesburgElementDateElement =
-      JohannesburgElementElement.querySelector(".date");
+      JohannesburgElement.querySelector(".date");
     let JohannesburgElementTimeElement =
-      JohannesburgElementElement.querySelector(".time");
+      JohannesburgElement.querySelector(".time");
     let JohannesburgElementTime = moment().tz("Africa/Johannesburg");
 
-    JohannesburgElementDateElement.innerHTML =
-      JohannesburgElementTime.format("MMMM	Do YYYY");
-    JohannesburgElementTimeElement.innerHTML = JohannesburgElementTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
+    if (JohannesburgElementDateElement && JohannesburgElementTimeElement) {
+      JohannesburgElementDateElement.innerHTML =
+        JohannesburgElementTime.format("MMMM Do YYYY");
+      JohannesburgElementTimeElement.innerHTML = JohannesburgElementTime.format(
+        "h:mm:ss [<small>]A[</small>]"
+      );
+    }
   }
 
   // East Rand
